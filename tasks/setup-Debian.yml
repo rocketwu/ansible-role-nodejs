@@ -41,3 +41,4 @@
   apt:
     name: "nodejs={{ nodejs_version | regex_replace('x', '') }}*"
     state: present
+    lock_timeout: 180
